@@ -3,8 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script src="js/jquery-3.6.0.min.js"></script>
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/board.css">
+<style>
+	.hover{background-color: rgba(182, 182, 182, 0.3);}
+</style>
 </head>
 <body>
 	<header></header>
@@ -31,45 +35,24 @@
 		</div>
 		<div class="content_main">
 			<div class="content_box1">
+				<a href="board_detail.html">
+					<div class="content_box2">
+						<div class="img_box1 mar_b10"><img src="img/댕댕이.jpeg" class="img_sty1"></div>
+						<span class="gray_font">서울시 강남구 역삼동</span>
+						<div style="margin-top: 10px; margin-left: 5px; color: blue;"><span>#댕댕이 </span><span>#댕댕이 </span><span>#댕댕이 </span></div>
+						<p class="p_sty">저희집 댕댕이들이에~ 이쁘지 않나요?ㅎㅎ<br>~~~~~~</p>
+						<span class="gray_font">5월 22일</span>
+					</div>
+				</a>
 				<div class="content_box2">
-					<div class="img_box mar_b10"><img src="img/댕댕이.jpeg" class="img_sty"></div>
+					<div class="img_box1 mar_b10"><img src="img/댕댕이.jpeg" class="img_sty1"></div>
 					<span class="gray_font">서울시 강남구 역삼동</span>
 					<div style="margin-top: 10px; margin-left: 5px; color: blue;"><span>#댕댕이 </span><span>#댕댕이 </span><span>#댕댕이 </span></div>
 					<p class="p_sty">저희집 댕댕이들이에~ 이쁘지 않나요?ㅎㅎ<br>~~~~~~</p>
 					<span class="gray_font">5월 22일</span>
 				</div>
 				<div class="content_box2">
-					<div class="img_box mar_b10"><img src="img/댕댕이.jpeg" class="img_sty"></div>
-					<span class="gray_font">서울시 강남구 역삼동</span>
-					<div style="margin-top: 10px; margin-left: 5px; color: blue;"><span>#댕댕이 </span><span>#댕댕이 </span><span>#댕댕이 </span></div>
-					<p class="p_sty">저희집 댕댕이들이에~ 이쁘지 않나요?ㅎㅎ<br>~~~~~~</p>
-					<span class="gray_font">5월 22일</span>
-				</div>
-				<div class="content_box2">
-					<div class="img_box mar_b10"><img src="img/댕댕이.jpeg" class="img_sty"></div>
-					<span class="gray_font">서울시 강남구 역삼동</span>
-					<div style="margin-top: 10px; margin-left: 5px; color: blue;"><span>#댕댕이 </span><span>#댕댕이 </span><span>#댕댕이 </span></div>
-					<p class="p_sty">저희집 댕댕이들이에~ 이쁘지 않나요?ㅎㅎ<br>~~~~~~</p>
-					<span class="gray_font">5월 22일</span>
-				</div>
-			</div>
-			<div class="content_box1">
-				<div class="content_box2">
-					<div class="img_box mar_b10"><img src="img/댕댕이.jpeg" class="img_sty"></div>
-					<span class="gray_font">서울시 강남구 역삼동</span>
-					<div style="margin-top: 10px; margin-left: 5px; color: blue;"><span>#댕댕이 </span><span>#댕댕이 </span><span>#댕댕이 </span></div>
-					<p class="p_sty">저희집 댕댕이들이에~ 이쁘지 않나요?ㅎㅎ<br>~~~~~~</p>
-					<span class="gray_font">5월 22일</span>
-				</div>
-				<div class="content_box2">
-					<div class="img_box mar_b10"><img src="img/댕댕이.jpeg" class="img_sty"></div>
-					<span class="gray_font">서울시 강남구 역삼동</span>
-					<div style="margin-top: 10px; margin-left: 5px; color: blue;"><span>#댕댕이 </span><span>#댕댕이 </span><span>#댕댕이 </span></div>
-					<p class="p_sty">저희집 댕댕이들이에~ 이쁘지 않나요?ㅎㅎ<br>~~~~~~</p>
-					<span class="gray_font">5월 22일</span>
-				</div>
-				<div class="content_box2">
-					<div class="img_box mar_b10"><img src="img/댕댕이.jpeg" class="img_sty"></div>
+					<div class="img_box1 mar_b10"><img src="img/댕댕이.jpeg" class="img_sty1"></div>
 					<span class="gray_font">서울시 강남구 역삼동</span>
 					<div style="margin-top: 10px; margin-left: 5px; color: blue;"><span>#댕댕이 </span><span>#댕댕이 </span><span>#댕댕이 </span></div>
 					<p class="p_sty">저희집 댕댕이들이에~ 이쁘지 않나요?ㅎㅎ<br>~~~~~~</p>
@@ -78,21 +61,44 @@
 			</div>
 			<div class="content_box1">
 				<div class="content_box2">
-					<div class="img_box mar_b10"><img src="img/댕댕이.jpeg" class="img_sty"></div>
+					<div class="img_box1 mar_b10"><img src="img/댕댕이.jpeg" class="img_sty1"></div>
 					<span class="gray_font">서울시 강남구 역삼동</span>
 					<div style="margin-top: 10px; margin-left: 5px; color: blue;"><span>#댕댕이 </span><span>#댕댕이 </span><span>#댕댕이 </span></div>
 					<p class="p_sty">저희집 댕댕이들이에~ 이쁘지 않나요?ㅎㅎ<br>~~~~~~</p>
 					<span class="gray_font">5월 22일</span>
 				</div>
 				<div class="content_box2">
-					<div class="img_box mar_b10"><img src="img/댕댕이.jpeg" class="img_sty"></div>
+					<div class="img_box1 mar_b10"><img src="img/댕댕이.jpeg" class="img_sty1"></div>
 					<span class="gray_font">서울시 강남구 역삼동</span>
 					<div style="margin-top: 10px; margin-left: 5px; color: blue;"><span>#댕댕이 </span><span>#댕댕이 </span><span>#댕댕이 </span></div>
 					<p class="p_sty">저희집 댕댕이들이에~ 이쁘지 않나요?ㅎㅎ<br>~~~~~~</p>
 					<span class="gray_font">5월 22일</span>
 				</div>
 				<div class="content_box2">
-					<div class="img_box mar_b10"><img src="img/댕댕이.jpeg" class="img_sty"></div>
+					<div class="img_box1 mar_b10"><img src="img/댕댕이.jpeg" class="img_sty1"></div>
+					<span class="gray_font">서울시 강남구 역삼동</span>
+					<div style="margin-top: 10px; margin-left: 5px; color: blue;"><span>#댕댕이 </span><span>#댕댕이 </span><span>#댕댕이 </span></div>
+					<p class="p_sty">저희집 댕댕이들이에~ 이쁘지 않나요?ㅎㅎ<br>~~~~~~</p>
+					<span class="gray_font">5월 22일</span>
+				</div>
+			</div>
+			<div class="content_box1">
+				<div class="content_box2">
+					<div class="img_box1 mar_b10"><img src="img/댕댕이.jpeg" class="img_sty1"></div>
+					<span class="gray_font">서울시 강남구 역삼동</span>
+					<div style="margin-top: 10px; margin-left: 5px; color: blue;"><span>#댕댕이 </span><span>#댕댕이 </span><span>#댕댕이 </span></div>
+					<p class="p_sty">저희집 댕댕이들이에~ 이쁘지 않나요?ㅎㅎ<br>~~~~~~</p>
+					<span class="gray_font">5월 22일</span>
+				</div>
+				<div class="content_box2">
+					<div class="img_box1 mar_b10"><img src="img/댕댕이.jpeg" class="img_sty1"></div>
+					<span class="gray_font">서울시 강남구 역삼동</span>
+					<div style="margin-top: 10px; margin-left: 5px; color: blue;"><span>#댕댕이 </span><span>#댕댕이 </span><span>#댕댕이 </span></div>
+					<p class="p_sty">저희집 댕댕이들이에~ 이쁘지 않나요?ㅎㅎ<br>~~~~~~</p>
+					<span class="gray_font">5월 22일</span>
+				</div>
+				<div class="content_box2">
+					<div class="img_box1 mar_b10"><img src="img/댕댕이.jpeg" class="img_sty1"></div>
 					<span class="gray_font">서울시 강남구 역삼동</span>
 					<div style="margin-top: 10px; margin-left: 5px; color: blue;"><span>#댕댕이 </span><span>#댕댕이 </span><span>#댕댕이 </span></div>
 					<p class="p_sty">저희집 댕댕이들이에~ 이쁘지 않나요?ㅎㅎ<br>~~~~~~</p>
@@ -101,5 +107,37 @@
 			</div>
 		</div>
 	</main>
+	<script>
+		$('.hashtag_btn').hover(function(){
+			$(this).addClass('hover');
+		}, function(){
+			$(this).removeClass('hover');
+		});
+	</script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
