@@ -5,15 +5,19 @@
 <title>Insert title here</title>
 <link rel="stylesheet" href="css/style.css">
 <style>
-	body{
-		padding: ;
-		align-items: center;
+
+	.mypage_main1{
+		display: flex;
+		flex-direction: row;
 	}
-	
+	.mypage_main2{
+		display: flex;
+		flex-direction: row;
+	}
 	.mypage_box1{
 		display: flex;
-		margin: 0 auto;
-		margin-top: 50px;
+		margin: 10px;
+		margin-top: 10px;
 		padding: 30px;
 		width: 300px;
 		height: 200px;
@@ -40,10 +44,11 @@
 		height: 32px;
 		border-radius: 26px;
 		border: none;
-		margin: 5px 5px 35px;
+		margin: 25px 5px 35px;
 		background-color :#ffd73c;
 		color: white;
 		font-size: 14px;
+		diplay: flex;
 	}
 </style>
 </head>
@@ -51,7 +56,7 @@
 	<header></header>
 	<h2>마이페이지</h2>
 	
-	<div class="mypage_main">
+	<div class="mypage_main1">
 		<div class="mypage_box1">
 			<h3>프로필</h3>
 			<div class="mypage_box2">
@@ -80,7 +85,9 @@
 				<span style="background:#f2f1f1; ">50,000  </span>원 후원하셨습니다.<br>
 			</div>
 		</div>
+		</div>
 		
+		<div class="mypage_main2">
 		<div class="mypage_box1">
 			<h3>봉사 예약 현황</h3>
 			<div class="mypage_box2">
@@ -117,8 +124,7 @@
 			</table>
 			</div>
 		</div>
-		
+		</div>
 		<button type="button" class="join_btn2" >개인정보수정</button>
-	</div>
 </body>
 </html>
