@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+
+	.mypage_main1{
+		display: flex;
+		flex-direction: row;
+	}
+	.mypage_main2{
+		display: flex;
+		flex-direction: row;
+	}
+	.mypage_box1{
+		display: flex;
+		margin: 10px;
+		margin-top: 10px;
+		padding: 30px;
+		width: 300px;
+		height: 200px;
+		background: white;
+		flex-direction: column;
+		align-items: center;
+		border: 1px solid #ffd73c;
+		justyfy-content: center;		
+	}
+	
+	table{border-collapse:collaspe;}
+	th{text-align:left; line-height:30px;}
+	td{font-size:12px; color:rgb(0,0,0,0.6);}
+	
+	.mypage_btn1{
+		border-radius:25px;
+		border: none;
+		background-color: #ffd73c;
+		color: white;
+	}
+	
+	.join_btn2{
+		width: 118px;
+		height: 32px;
+		border-radius: 26px;
+		border: none;
+		margin: 25px 5px 35px;
+		background-color :#ffd73c;
+		color: white;
+		font-size: 14px;
+		diplay: flex;
+	}
+</style>
+</head>
+<body>
+	<header></header>
+	<h2>마이페이지</h2>
+	
+	<div class="mypage_main1">
+		<div class="mypage_box1">
+			<h3>프로필</h3>
+			<div class="mypage_box2">
+				<table>
+					<tr>
+						<th>이름</th>
+						<td>포커스</td>
+					</tr>
+					<tr>
+						<th>연락처</th>
+						<td>010-0000-0000</td>
+					</tr>
+					<tr>
+						<th>주소</th>
+						<td>서울시 강남구 역삼동</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		
+		<div class="mypage_box1">
+			<h3>나의 후원</h3>
+			<div class="mypage_box2" style="line-height:40px;">
+				<b>포커스</b>님, 후원해주셔서 감사합니다.<br>
+				현재까지<br>
+				<span style="background:#f2f1f1; ">50,000  </span>원 후원하셨습니다.<br>
+			</div>
+		</div>
+		</div>
+		
+		<div class="mypage_main2">
+		<div class="mypage_box1">
+			<h3>봉사 예약 현황</h3>
+			<div class="mypage_box2">
+			<button type="button" class="mypage_btn1">new!</button>
+			<table>
+					<tr>
+						<th>봉사 게시글 제목</th>
+						<td>[청소] 2시간 부탁드려요</td>
+					</tr>
+					<tr>
+						<th>예약 날짜</th>
+						<td>2021년 5월 24일 9시 30분</td>
+					</tr>
+					<tr>
+						<th>봉사 위치</th>
+						<td>서울시 강남구 역삼동</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		
+		<div class="mypage_box1">
+			<h3>나의 활동</h3>
+			<div class="mypage_box2">
+			<table>
+					<tr>
+						<th>내가 쓴 글 보러가기</th>
+						<td>3 개</td> 
+					</tr>
+					<tr>
+						<th>내가 쓴 댓글 보러가기</th>
+						<td>10 개</td>
+					</tr>
+			</table>
+			</div>
+		</div>
+		</div>
+		<button type="button" class="join_btn2" >개인정보수정 이거옆으로 옮겨주세요!!</button>
+</body>
+</html>
