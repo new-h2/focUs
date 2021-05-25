@@ -35,15 +35,13 @@
 		</div>
 		<div class="content_main">
 			<div class="content_box1">
-				<a href="board_detail.html">
-					<div class="content_box2">
-						<div class="img_box1 mar_b10"><img src="img/댕댕이.jpeg" class="img_sty1"></div>
-						<span class="gray_font">서울시 강남구 역삼동</span>
-						<div style="margin-top: 10px; margin-left: 5px; color: blue;"><span>#댕댕이 </span><span>#댕댕이 </span><span>#댕댕이 </span></div>
-						<p class="p_sty">저희집 댕댕이들이에~ 이쁘지 않나요?ㅎㅎ<br>~~~~~~</p>
-						<span class="gray_font">5월 22일</span>
-					</div>
-				</a>
+				<div class="content_box2">
+					<div class="img_box1 mar_b10"><img src="img/댕댕이.jpeg" class="img_sty1"></div>
+					<span class="gray_font">서울시 강남구 역삼동</span>
+					<div style="margin-top: 10px; margin-left: 5px; color: blue;"><span>#댕댕이 </span><span>#댕댕이 </span><span>#댕댕이 </span></div>
+					<p class="p_sty">저희집 댕댕이들이에~ 이쁘지 않나요?ㅎㅎ<br>~~~~~~</p>
+					<span class="gray_font">5월 22일</span>
+				</div>
 				<div class="content_box2">
 					<div class="img_box1 mar_b10"><img src="img/댕댕이.jpeg" class="img_sty1"></div>
 					<span class="gray_font">서울시 강남구 역삼동</span>
@@ -107,11 +105,55 @@
 			</div>
 		</div>
 	</main>
+	<div style="width: 100%; height: 100%; background: rgba(0,0,0,0.5); position: fixed; display: none;" id="detail">
+		<div style="width: 50px; height: 50px; background: black; position: fixed; left: 100%; transform: translate(-100%, 0);" id="close"></div>
+		<div class="main_detail">
+			<div class="img_box2"><img src="img/댕댕이.jpeg" class="img_sty2"></div>
+			<div class="content_detail">
+				<div style="width: 100%; height: 168px;">
+					<div style="padding: 10px 0;">
+						<span style="font-size: 25px; font-weight: bold; margin: 0 10px; display: block;">moburi</span>
+						<span style="font-size: 15px; margin: 0 10px;">서울시 강남구 역삼동</span>				
+					</div><div class="line"></div>
+					<p style="margin: 10px 10px;">
+						저희집 댕댕이들이에~ 이쁘지 않나요?ㅎㅎ<br>~~~~~~
+					</p>
+					<div style="margin-left: 10px; font-size: 15px;">
+						<span>#댕댕이 </span><span>#댕댕이 </span><span>#댕댕이 </span>
+					</div>
+					<div class="write_date"><span>5월 22일</span></div><div class="line"></div>
+				</div>
+				<div class="comment_box">
+					<div class="comment">
+					</div>
+					<div class="line"></div>
+					<div class="comment"></div>
+					<div class="line"></div>
+					<div class="comment"></div>
+					<div class="line"></div>
+					<div class="comment"></div>
+					<div class="line"></div>
+					<form class="comment_write">
+						<textarea placeholder="댓글을 입력하세요..."></textarea>
+						<input type="submit" value="작성" class="write_btn" disabled>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script>
 		$('.hashtag_btn').hover(function(){
 			$(this).addClass('hover');
 		}, function(){
 			$(this).removeClass('hover');
+		});
+		
+		$('.content_box2').click(function(){
+			$("#detail").css({"z-index":"10", "display":"block"});
+		});
+		
+		$('#close').click(function(){
+			$('#detail').css('display', 'none');
 		});
 	</script>
 </body>
