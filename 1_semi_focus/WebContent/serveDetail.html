@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b588a101d5beb8ed70d9990a7e73c22c"></script>
 <style>
     header{
         height: 70px;
@@ -14,34 +14,44 @@
         margin: auto;
     } /* 사이즈가 안맞아 1000으로 수정,*/
     #main{
-        margin-left: 80px;
+        margin-left: 10px;
         margin-top: 100px;
         font-size: 50px;
         }
     #main2{
-
-        margin-left: 800px;
+        text-align: right;
+        margin-right: 10px;
         margin-top: 10px;
         font-size: 20px;
     }
-
-    #main3{
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+        .main3{
+        display: flex;
         margin-top: 50px;
-        width: 960px;
-        height: 540.4px;
+        width: 500px;
+        height: 400px;
         border: 1px solid black; 
-    }
+        object-fit: cover;
+        }
 
-    #main4{
-        margin-top: 30px;
-        width: 960px;
-        height: 900px;
-    }
+        .main4{
+        flex-direction: row;
+        margin-top: 40px;
+        width: 450px;
+        height: 450px;
+        margin-right: 10px;
+        line-height: 40px;
+        }
 
     #main5{
-        margin-top: -360px;
-        width: 960px;
-        height: 540.4px;
+        
+        margin-top: 10px;
+        width: 1000px;
+        height: 540px;
         border: 1px solid black;
     }
 
@@ -65,6 +75,7 @@
 
 </head>
 <body style="background-color: #F5F1ED;">
+<form action="/1_Servlet/Test.do">
     <header>
         <!-- 자리비워둠 -->
     </header>
@@ -74,35 +85,44 @@
     
     <div id="main2">
         <p>
-            21/05/20<br><br>
-            댕댕천사
+            작성일자 : 21/05/20<br><br>
+            작성자 : 댕댕천사
         </p>
     </div>
 
-    <div id="main3">
+    <div class="container">
+
+    <div class="main3">
         <img src="KH정보교육/프로젝트/사진/강아지.png" width="100%">
     </div>
-    <br>
-    <div id="main4">
-    <textarea rows="30" cols="116" style="background-color: #F5F1ED; border: 6px solid #F5F1ED; text-align: center; font-size: 15px; resize:none;" readonly >
-꽁꽁이네 입니다.
-국가에서 지원되는곳이 아니라
-꽁꽁이네는 안락사없는 사설보호소 입니다.
+    <div class="main4">
+    
+    꽁꽁이네 입니다.
+    국가에서 지원되는곳이 아니라
+    꽁꽁이네는 안락사없는 사설보호소 입니다.
 
-분양을 보내고 있어도
-꾸준히 버림받은 아이들이 계속 늘어나다보니..
-견사를 늘리는것이 제일 문제가 되고있습니다.
+    분양을 보내고 있어도
+    꾸준히 버림받은 아이들이 계속 늘어나다보니..
+    견사를 늘리는것이 제일 문제가 되고있습니다.
 
-상처받은 아이들에게 그나마 좋은환경에서 지낼 수 있도록 하기에는
-부족한 부분들이 많아요.
+    상처받은 아이들에게 그나마 좋은환경에서 지낼 수 있도록 하기에는
+    부족한 부분들이 많아요.
 
-시설,사료 등 도움의 손길이 절실하게 필요한곳입니다!
-아이들이 있는동안 행복하게 지낼 수 있도록 도와주세요!
-    </textarea>
+    시설,사료 등 도움의 손길이 절실하게 필요한곳입니다!
+    아이들이 있는동안 행복하게 지낼 수 있도록 도와주세요!
     </div>
-
+</div>
     <div id="main5">
-        카카오 지도 api
+     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b588a101d5beb8ed70d9990a7e73c22c"></script>
+	<script>
+		var container = document.getElementById('main5');
+		var options = {
+			center: new kakao.maps.LatLng(33.450701, 126.570667),
+			level: 3
+		};
+
+		var main5 = new kakao.maps.Map(container, options);
+	</script>
     </div>
     
     <div id="main6">
@@ -128,5 +148,7 @@
     <footer>
         <!-- 비워둠 -->
     </footer>
+    </form>
 </body>
 </html>
+ <!-- <textarea rows="30" cols="116" style="background-color: #F5F1ED; border: 6px solid #F5F1ED; text-align: center; font-size: 15px; resize:none;" readonly > -->
