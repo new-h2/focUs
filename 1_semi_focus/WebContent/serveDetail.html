@@ -3,13 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b588a101d5beb8ed70d9990a7e73c22c"></script>
+<!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b588a101d5beb8ed70d9990a7e73c22c"></script> -->
 <style>
-    header{
-        height: 70px;
-    }
-
-    body{
+    .Total{
         width: 1000px;
         margin: auto;
     } /* 사이즈가 안맞아 1000으로 수정,*/
@@ -69,16 +65,49 @@
     }
 
     #main8{
-        margin-left: 900px;
+        margin-top: -24px;
+        margin-left: 850px;
     }
+
+    #main9{
+        margin-top: 20px;
+        line-height: 40px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #main10{
+        margin-top: 20px;
+    }
+    footer{
+        
+        height: 700px;
+        all:unset;  
+    }
+        #footer1{
+            margin-top: 30px;
+            border: 1px solid black;
+            width: 200px;
+            height: 150px;
+        }
+        #footer2{
+            text-align: center;
+            margin-top: 80px;
+            line-height: 50px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
 </style>
 
 </head>
-<body style="background-color: #F5F1ED;">
+<body>
 <form action="/1_Servlet/Test.do">
-    <header>
-        <!-- 자리비워둠 -->
-    </header>
+<header>
+
+</header>
+<div class="Total">
+
     <div id="main">
         <p><input type="button" value="#사료"></button> 불쌍한 강아지들</p>
     </div>
@@ -113,7 +142,7 @@
     </div>
 </div>
     <div id="main5">
-     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b588a101d5beb8ed70d9990a7e73c22c"></script>
+     <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b588a101d5beb8ed70d9990a7e73c22c"></script>
 	<script>
 		var container = document.getElementById('main5');
 		var options = {
@@ -121,7 +150,7 @@
 			level: 3
 		};
 
-		var main5 = new kakao.maps.Map(container, options);
+		var main5 = new kakao.maps.Map(container, options); -->
 	</script>
     </div>
     
@@ -134,19 +163,32 @@
     </div>
     <br><br><br><br>
     <hr style="border: 1px solid black;">
-
+    <div id="main10">
+        <input type="text" size="100px" placeholder="댓글을 입력해주세요">
+    </div>
     <div id="main8">
+       
         <input type="button" value="댓글작성" style="background-color: #FFD73C;">
     </div>
 
     <div id="main9">
+        
         강건강 : 봉사하러 가고 싶습니다!<br>
         남나눔 : 봉사하러 가고 싶습니다!<br>
         도대담 : 봉사하러 가고 싶습니다!<br>
     </div>
     <br><br><br><br>
+</div>
     <footer>
-        <!-- 비워둠 -->
+        <hr style="border:5px solid #ffd73c;">
+        <div id="footer1">
+
+        </div>
+        <div id ="footer2">
+            (06234) 서울특별시 강남구 테헤란로 14길 6 남도빌딩 | TEL : 0000 - 0000 | FAX : 02 - 0000 - 0000<br>
+            MAIL : focus@service.com<br>
+            copyright @FOCUS CORP.ALL LIGHT RESERVED<br>
+        </div>
     </footer>
     </form>
 </body>
