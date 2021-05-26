@@ -3,8 +3,70 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script src="js/jquery-3.6.0.min.js"></script>
+<style>
+   header{
+      display:flex;
+      justify-content:space-between;
+      background-color:white;
+      height: 60px;
+      border-bottom: 1px solid lightgrey;
+   }
+   .cate_logo{
+      margin: 0 20px;
+      font-size:45px;
+      color:#ffd73c;
+      
+   }
+   
+   .cate_item{
+      height: 60px;
+      width: 100px;
+      border-style: none;
+      background-color: white;
+      font-size:18px;
+   }
+   
+   .cate_margin{
+      margin:0px 200px;
+   }
+   
+   .cate_toLogin, .cate_toMyPage{
+      height: 60px;
+      border-style: none;
+      background-color: white;
+      color:black;
+      
+      
+   }
+   
+   .cate_toMyPage{
+      margin:0px 20px;
+   }
+</style>
 </head>
 <body>
-	테스트
+   <header>
+      <!-- 왼쪽 상단 로고 -->
+      <div class="cate_logo">
+         <b>focUs</b>
+      </div>
+      
+      <!-- 카테고리 -->
+      <div class="cate_category">
+         <a herf=""><button class="cate_item">후원하기</button></a>
+         <a herf="serveReserve.html"><button class="cate_item cate_margin">봉사하기</button></a>
+         <a herf="board.html"><button class="cate_item">게시글</button></a>
+      </div>
+      
+      <!-- 로그인으로 하이퍼링크 -->
+      <div class="cate_to">
+         <a herf="login.html"><button class="cate_toLogin">로그인</button></a>
+         <a herf="maPage.html"><button class="cate_toMyPage">마이페이지</button></a>
+      </div>
+   
+   </header>
+   <!-- 본문 -->
+   <img src='/image/테스트.jpg'>
 </body>
 </html>
