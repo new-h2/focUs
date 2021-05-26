@@ -8,9 +8,10 @@ html{
 	height:100%;
 }
 body{
-		background: #f2f1f1;
+		background: #ffffff;
 		padding: ;
 		align-items: center;
+		font-size:13px;
 	}
 	
 	.join_container{
@@ -19,10 +20,10 @@ body{
 			margin-top: 50px;
 			padding: 30px;
 			width: 350px;
-			height: 800px;	
+			height: 650px;	
 			flex-direction: column;
 			align-items: center;
-			border: 1px solid #ffd73c;
+			border: 3px solid #ffd73c;
 			justyfy-content: center;
 	}
 
@@ -44,10 +45,10 @@ body{
 	
 	.join_input, .join_password_input, .join_name, .join_phone, .join_email, .join_address{
 		width: 268px;
-		height: 22px;
+		height: 25px;
 		background-color: #fafafa;
 		border-radius: 3px;
-		border:none;
+		border:1px solid lightgrey;
 	}
 		
 	.join_btn{
@@ -74,34 +75,12 @@ body{
 			비밀번호<br> <input type="password"  class="join_password_input" id="userPW"> <br>
 			비밀번호 확인 <br><input type="password"  class="join_password_input" id="userPW"> <br>
 			이름 <br> <input type="text"  class="join_name" id="name"> <br>
-			생년월일 <br>
-			<!-- YY -->
-				<input type="text" id="yy" class="join_bir_yy" maxlength="4" placeholder="년(4자)" size="10">
-			<!-- MM -->
-				<select class="join_bir_mm">
-					<option>월</option>
-					<option value="01">1</option>
-					<option value="02">2</option>
-					<option value="03">3</option>
-					<option value="04">4</option>
-					<option value="05">5</option>
-					<option value="06">6</option>
-					<option value="07">7</option>
-					<option value="08">8</option>
-					<option value="09">9</option>
-					<option value="10">10</option>
-					<option value="11">11</option>
-					<option value="12">12</option>
-				</select>
-			<!-- DD -->
-				<input type="text" id="dd" class="login" maxlength="2" placeholder="일" size="5">
-			<br>
 			휴대전화  ('-'제외하여 숫자만 입력해주세요)<br>  
 			<input type="tel"  class="join_phone" id="phone"><br>
 			이메일<br> <input type="email"  class="join_email" id="email"><br>
 			주소<br> <input type="text"  class="join_address" id="address"><br>
 		<div class="btn">
-			<button type="button" class="join_btn" disabled>가입하기</button>
+			<button type="button" class="join_btn" >가입하기</button>
 		</div>
 		</form>
 
