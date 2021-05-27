@@ -3,11 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/donationDetail_style.css">
 <script src="js/jquery-3.6.0.min.js"></script>
 <style>
-
+   header{
+      display:flex;
+      justify-content:space-between;
+      background-color:white;
+      height: 60px;
+      border-bottom: 1px solid lightgrey;
+   }
    .cate_logo{
       margin: 0 20px;
       font-size:45px;
@@ -16,19 +20,21 @@
    }
    
    .cate_item{
-      height: 70px;
+      height: 60px;
       width: 100px;
       border-style: none;
-      background-color: rgba(0,0,0,0);
+      background-color: white;
       font-size:18px;
       margin:0px 0px 0px 100px;
    }
    
    .cate_toLogin, .cate_toMyPage{
-      height: 70px;
+      height: 60px;
       border-style: none;
-      background-color: rgba(0,0,0,0);
-      color:black;  
+      background-color: white;
+      color:black;
+      
+      
    }
    
    .cate_toMyPage{
@@ -73,44 +79,10 @@
    <!-- 본문 -->
    <div class="main_body">
    <img src='image/test.jpg' class="main_img">
-   <img src='image/test1.jpg' class="main_img">
-   <img src='image/test2.jpg' class="main_img">
-   <img src='image/test3.jpg' class="main_img">
-   <img src='image/test4.jpg' class="main_img">
+   <img src='image/test.jpg' class="main_img">
    
    </div>
    
-   <footer>
-		<div class="footer-container">
-			<div class="footer-top">
-				<div class="footer-logo"></div>
-				<div class="footer-nav">
-					<div class="footer-nav-wrap">
-						<a href="#">믿을 수 있는 중고거래</a>
-						<a href="#">자주 묻는 질문</a>
-					</div>
-					<div class="footer-nav-wrap">
-						<a href="#" class="blur">회사소개</a>
-						<a href="#">광고주센터</a>
-						<a href="#" class="blur">동네가게</a>
-					</div>
-					<div class="footer-nav-wrap">
-						<a href="#" class="blur">이용약관</a>
-						<a href="#" class="blur">개인정보처리방침</a>
-						<a href="#" class="blur">위치기반서비스 이용약관</a>
-					</div>
-				</div>
-			</div>
-			<div class="footer-content">
-				<div class="footer-content-wrap">
-					<div class="footer-content-info">(06234) 서울특별시 강남구 테헤란로 14길 6 남도빌딩 | TEL : 0000 - 0000 | FAX : 02 - 0000 - 0000</div>
-					<div class="footer-content-info">MAIL : focus@service.com</div>
-					<div class="footer-content-info">copyright @FOCUS CORP.ALL LIGHT RESERVED</div>
-				</div>
-			</div>
-			<div class="footer-bottom"></div>
-		</div>
-	</footer>
 
 </body>
 </html>
