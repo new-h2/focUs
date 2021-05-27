@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.bold600 {
+    font-weight: 600;
+}
+
+.container {
+    /* border: 1px solid red; */
+    height: 120%;
+    margin-top: 50px;
+}
+
+.donation-title-wrap {
+    /* border: 1px solid green; */
+    height: 150px;
+    padding-left: 54.9px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.donation-title-tag {
+    background: #FBF7F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s;
+    box-shadow: 1px 1px 1px 1px #888;
+}
+
+.donation-title-tag:hover {
+    
+    box-shadow: 3px 3px 3px 1px #888;
+}
+
+.donation-title-name {
+    font-size: 42px;
+    margin-top: 10px;
+    letter-spacing: -3px;
+}
+
+.donation-title-date {
+    margin-top: 5px;
+    text-align: right;
+    padding-right: 32px;
+    font-weight: 600;
+    color: #888;
+}
+
+.donation-content-wrap {
+    margin-top: 5px;
+    /* border: 1px solid black; */
+    height: 100%;
+}
+
+.donation-content-top {
+    height: 650px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-left: 2px solid #ccc;
+}
+
+.donation-content-image-box {
+    width: 540px;
+    height: 640px;
+    margin: 0 59.4px;
+}
+
+.donation-content-image {
+    width: 100%;
+    height: 100%;
+    background-image: url("../실험/영양.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.donation-content-donation {
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    width: 450px;
+    height: 650px;
+}
+
+.donation-content-donation-now {
+    padding: 80px 32px 0;
+    height: 100%;
+}
+
+.donation-now {
+    font-size: 26px;
+    color: black;
+    letter-spacing: -0.3px;
+    font-weight: 600px;
+    margin-top: -80px;
+}
+
+.donation-exp {
+    margin-top: -30px;
+    font-size: 20px;
+    color: #ccc;
+    letter-spacing: -0.3px;
+    font-weight: 600;
+}
+
+.donation-totalprice { 
+    /* 이름 수정해야함. 10,000원. */
+    font-size: 42px;
+    letter-spacing: -0.3px;
+    color: #444;
+    font-weight: 900;
+    margin-left: 200px;
+}
+
+.donation-expemp {
+   
+    font-size: 25px;
+    letter-spacing: -0.3px;
+    color: #444;
+    font-weight: 900;
+}
+
+.donation-nowgoal {
+    font-size: 16px;
+    color: #888;
+    letter-spacing: -0.3px;
+    margin: 20px 0;
+}
+
+.donation-btn {
+    width: 100%;
+    height: 80px;
+    color: white;
+    background: #ffd73c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: -0.3px;
+    box-shadow: 1px 1px 1px 1px #927b1f;
+    transition: .15s;
+    margin-top: 10px;
+}
+
+.donation-btn:hover {
+    box-shadow: 2px 2px 2px 3px #927b1f;
+    font-size: 31px;
+}
+.donation-btn1 {
+    width: 100%;
+    height: 80px;
+    color: white;
+    background: #ffd73c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: -0.3px;
+    box-shadow: 1px 1px 1px 1px #927b1f;
+    transition: .15s;
+    margin-top: 50px;
+}
+
+.donation-btn1:hover {
+    box-shadow: 2px 2px 2px 3px #927b1f;
+    font-size: 31px;
+}
+
+
+.donation-line {
+    border-top: 2px solid #ccc;
+    margin: 35px 0;
+}
+
+.donation-content-middle {  
+    width: 100%;
+    height: 67%;
+    display: flex;
+    flex-direction: column;
+}
+
+.donation-content-content {
+    margin-top: 50px;
+    padding: 0 59.4px;
+}
+
+.donation-content-subtitle {
+    font-size: 40px;
+    margin-bottom: 30px;
+    letter-spacing: -0.3px;
+    font-weight: 700;
+}
+
+.donation-content-subcontent {
+    font-size: 17px;
+    /* letter-spacing: -0.3px; */
+    margin-bottom: 40px;
+    line-height: 45px;
+    font-weight: bold;
+}
+
+.donation-content-plan {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30%;
+    padding: 0 59.4px;
+}
+
+.donation-content-plan1 {
+    width: 50%;
+    height: 30%;
+}
+
+.donation-content-plan2 {
+    width: 50%;
+    height: 30%;
+}
+
+.donation-content-plan-title {
+    font-size: 28px;
+    padding: 20px 0 20px 5px;
+    letter-spacing: -0.7px;
+}
+
+.donation-content-plan-table {
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.donation-content-plan-table p {
+    line-height: 28px;
+}
+
+.donation-content-bottom {
+    width: 100%;
+    height: 30%;
+    margin-bottom: 120px;
+    padding: 0 59.4px;
+}
+
+.donation-content-bottom-line {
+    border-top: 2px solid #ccc;
+    margin: 20px 0;
+    width: 1000px;
+}
+
+.donation-content-bottom-input {
+    width: 80%;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 5px;
+    border: none;
+    box-shadow: 1px 1px 1px 1px #888;
+    border-radius: 3px;
+}
+
+.donation-content-bottom-submit {
+    background: #ffd73c;
+    border: none;
+    width: 80px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 1px 1px 1px 1px #927b1f;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.donation-content-bottom-comments {
+    height: 20%;
+}
+
+.donation-content-bottom-comm {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 5px;
+}
+
+.donation-content-bottom-comm-writer {
+    font-weight: bold;
+    margin-right: 70px;
+}
+
+.donation-content-bottom-comm-content {
+    color: #444;
+}
+
+.my-image{
+    width: 1000px;
+    height: 2000px;
+    background-image: url("../실험/시험용1.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.my-image2{
+    width: 1000px;
+    height: 500px;
+    background-image: url("../실험/시험용2.png");
+    background-size: cover;
+    background-position: center;
+}
+#my3{
+    margin-left: 57px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.display1{
+    margin-top: 30px;
+    margin-left: 57px;
+    width: 150px; 
+    height: 150px; 
+    color: black;
+    text-align: center;
+    display: inline-block;
+}
+    	.area1{background-image: url("../실험/영양.png");}
+    	.area2{background-image: url("../실험/영양.png");}
+    	.area3{background-image: url("../실험/영양.png");}
+    	.area4{background-image: url("../실험/영양.png");}
+    	.area5{background-image: url("../실험/영양.png");}
+.my4{
+    margin-top: 20px;
+    margin-left: 57px;
+    display: inline-block;
+}
+
+#review{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.cate_logo{
+    margin: 0 20px;
+    font-size:45px;
+    color:#ffd73c;
+    
+  }
+ 
+ .cate_item{
+    height: 60px;
+    width: 100px;
+    border-style: none;
+    background-color: white;
+    font-size:18px;
+    margin:0px 0px 0px 100px;
+  }
+ 
+ .cate_toLogin, .cate_toMyPage{
+    height: 60px;
+    border-style: none;
+    background-color: white;
+    color:black;
+    
+    
+  }
+ 
+ .cate_toMyPage{
+    margin:0px 20px;
+  }
+ 
+ .main_body{
+     display:flex;
+     flex-direction: column;
+     justify-content:center;
+ }
+ 
+ .main_img{
+     width: 1100px;
+ }
+
+ #one{
+     margin-top: 10px;
+     line-height: 40px;
+     font-size: 20px;
+ }
