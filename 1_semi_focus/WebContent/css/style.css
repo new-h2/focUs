@@ -16,7 +16,7 @@ header{
 	display:flex;
     justify-content:space-between;
     background-color:white;
-    height: 60px;
+    height: 70px;
     border-bottom: 1px solid lightgrey;
 }
 main{
