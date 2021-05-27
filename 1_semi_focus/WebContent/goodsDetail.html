@@ -1,14 +1,73 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>굿즈 상세?</title>
-<link rel="stylesheet" href="css/실험/main.css">
-<link rel="stylesheet" href="css/실험/css.css">
+<link rel="stylesheet" href="../실험/main.css">
+<link rel="stylesheet" href="../실험/css.css">
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script language="JavaScript">
+	var sell_price;
+	var amount;
+	
+	function init () {
+		sell_price = document.form.sell_price.value;
+		amount = document.form.amount.value;
+		document.form.sum.value = sell_price;
+		change();
+	}
+	
+	function add () {
+		hm = document.form.amount;
+		sum = document.form.sum;
+		hm.value ++ ;
+	
+		sum.value = parseInt(hm.value) * sell_price;
+	}
+	
+	function del () {
+		hm = document.form.amount;
+		sum = document.form.sum;
+			if (hm.value > 1) {
+				hm.value -- ;
+				sum.value = parseInt(hm.value) * sell_price;
+			}
+	}
+	
+	function change () {
+		hm = document.form.amount;
+		sum = document.form.sum;
+	
+			if (hm.value < 0) {
+				hm.value = 0;
+			}
+		sum.value = parseInt(hm.value) * sell_price;
+	}  
+	</script>
 </head>
 <body>
-	<header></header>
+	<header>
+    <!-- 왼쪽 상단 로고 -->
+    <div class="cate_logo">
+        <b>focUs</b>
+     </div>
+     
+     <!-- 카테고리 -->
+     <div class="cate_category">
+
+        <a href="#"><button class="cate_item">후원하기</button></a>
+        <a href="serveReserve.html"><button class="cate_item">봉사하기</button></a>
+        <a href="board.html"><button class="cate_item">게시글</button></a>
+        <a href="#"><button class="cate_item">굿즈판매</button></a>
+        
+     </div>
+     
+     <!-- 로그인으로 하이퍼링크 -->
+     <div class="cate_to">
+        <a href="login.html"><button class="cate_toLogin">로그인</button></a>
+        <a href="myPage.html"><button class="cate_toMyPage">마이페이지</button></a>
+     </div>
+</header>
 	<main>
 		<div class="container">
 			<div class="donation-title-wrap">
@@ -30,10 +89,22 @@
 							
 							<div class="donation-line"></div>
 							<p class="donation-exp">구매할 갯수</p>
+			
+							<div id="one">
+							<form name="form" method="get">
+								수량 : <input type=hidden name="sell_price" value="10000">
+								<input type="button" value=" + " onclick="add();"><input type="text" name="amount" value="1" size="5" onchange="change();" style="width: 70px; height: 25px; border-style: none; font-size: 20px; text-align: center;">
+								<input type="button" value=" - " onclick="del();"><br>
+								
+								총 상품금액 : <input type="text" name="sum" size="20" readonly style="width: 70px; height: 25px; border-style: none; font-size: 20px; text-align: center;">원
+								</form>
+							</div>
 							<div class="donation-line"></div>
 							<span class="donation-expemp">택배비: 3000원 | 주문시 결제</span><br>
 							<span class="donation-exp">~원 이상 구매 시 무료 배송</span>
 							<div class="donation-btn">구매하기</div>
+							<div class="donation-btn1">장바구니</div>
+							
 						</div>
 					</div>
 				</div>
@@ -116,9 +187,7 @@
 				</div>
 			</div>
 		</div>
-
 	</main>
-
 	<footer>
 		<div class="footer-container">
 			<div class="footer-top">
