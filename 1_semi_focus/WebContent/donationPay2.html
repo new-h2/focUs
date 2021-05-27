@@ -1,10 +1,12 @@
 
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-
+<link rel="stylesheet" href="css/navigation.css">
+<link rel="stylesheet" href="css/style.css">
 <style>
     header{
         height: 70px;
@@ -97,10 +99,30 @@
 </style>
 
 </head>
-<body style="background-color: #F5F1ED;">
-    <header>
-        <!-- 자리비워둠 -->
-    </header>
+<body>
+   <header>
+      <!-- 왼쪽 상단 로고 -->
+      <div class="cate_logo">
+         <b>focUs</b>
+      </div>
+      
+      <!-- 카테고리 -->
+      <div class="cate_category">
+
+         <a href="#"><button class="cate_item">후원하기</button></a>
+         <a href="serveReserve.html"><button class="cate_item">봉사하기</button></a>
+         <a href="board.html"><button class="cate_item">게시글</button></a>
+         <a href="#"><button class="cate_item">굿즈판매</button></a>
+         
+      </div>
+      
+      <!-- 로그인으로 하이퍼링크 -->
+      <div class="cate_to">
+         <a href="login.html"><button class="cate_toLogin">로그인</button></a>
+         <a href="myPage.html"><button class="cate_toMyPage">마이페이지</button></a>
+      </div>
+   </header>
+   
     <div id="main10">
      	후원하기
     </div>
@@ -110,9 +132,9 @@
             <div class="positioning1" id="second">
             <p>
             <span style="color: #FFD73C; font-size: 60px;">*</span> <span style=" font-size: 50px;">후원자 정보(필수)</span><br><br>
-            이름 : 김땡땡<br>
-            휴대폰 번호 : 010-1111-1111<br>
-            이메일: dog1004@naver.com
+            이름 :<span>김땡땡</span><br>
+            휴대폰 번호 :<span>010-1111-1111</span><br>
+            이메일:<span>dog1004@naver.com</span>
             </p>
             </div>
         </div> 
@@ -123,7 +145,11 @@
             <p>
             <span style="color: #FFD73C; font-size: 60px;">*</span> <span style=" font-size: 50px;">후원금 </span> <span style="font-size: small;">*결제하실 금액이 맞는 정확하게  확인해주세요!*</span> <br><br>
             <span style="font-size: 30px;">
-            <label>후원금:</label><input type="number" id="dprice" placeholder="금액을 입력해주세요">원
+            <label>후원금:</label>
+            <input type="text" style="width:300px; height:50px; margin:0 15px; 
+            border: none; border-radius: 5px; box-shadow: 1px 1px 1px 1px #ccc; 
+            padding-right: 10px; text-align: right; font-size:20px; color:#444; font-weight:600 "
+            id="dprice" placeholder="금액을 입력해주세요">원
             </span>
             </p>
         </div>
