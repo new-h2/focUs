@@ -25,10 +25,7 @@
       border-style: none;
       background-color: white;
       font-size:18px;
-   }
-   
-   .cate_margin{
-      margin:0px 200px;
+      margin:0px 0px 0px 100px;
    }
    
    .cate_toLogin, .cate_toMyPage{
@@ -43,6 +40,16 @@
    .cate_toMyPage{
       margin:0px 20px;
    }
+   
+   .main_body{
+   	display:flex;
+   	flex-direction: column;
+   	justify-content:center;
+   }
+   
+   .main_img{
+   	width: 1100px;
+   }
 </style>
 </head>
 <body>
@@ -56,8 +63,10 @@
       <div class="cate_category">
 
          <a href="#"><button class="cate_item">후원하기</button></a>
-         <a href="serveReserve.html"><button class="cate_item cate_margin">봉사하기</button></a>
+         <a href="serveReserve.html"><button class="cate_item">봉사하기</button></a>
          <a href="board.html"><button class="cate_item">게시글</button></a>
+         <a href="#"><button class="cate_item">굿즈판매</button></a>
+         
       </div>
       
       <!-- 로그인으로 하이퍼링크 -->
@@ -66,12 +75,13 @@
          <a href="myPage.html"><button class="cate_toMyPage">마이페이지</button></a>
       </div>
    </header>
-<<<<<<< HEAD
    <!-- 본문 -->
-   <img src='image/테스트.jpg'>
-=======
+   <div class="main_body">
+   <img src='image/test.jpg' class="main_img">
+   <img src='image/test.jpg' class="main_img">
+   
+   </div>
    
 
->>>>>>> refs/remotes/origin/master
 </body>
 </html>
