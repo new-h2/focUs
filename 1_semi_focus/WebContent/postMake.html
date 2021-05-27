@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시글 작성 틀</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/postMake_style.css">
+</head>
+<body>
+    <header></header>
+    <main>
+
+        <div class="post-container">
+            <div class="note-wrap">
+                <div class="note-title">
+                    <span class="main-color point">!</span><span class="note-warning">봉사하기 작성 시 유의해주세요.</p>
+                </div>
+                <div class="note-content">
+                    <ul>
+                        <li>봉사자들이 가능한 시간대와 위치를 고려해주세요.</li>
+                        <li>코로나로부터 안전을 위해 하루 지정된 인원만을 받아 시행해주세요.</li>
+                        <li>어쩌구</li>
+                        <li>저쩌구</li>
+                        <li>해서 ---------지켜주세요.</li>
+                    </ul>
+                </div>  
+            </div>
+
+            <form action="" method="post">
+                <div class="area-wrap">
+                    <div class="OOTC">
+                        <div class="OOTC-area">
+                            <select name="category" id="category">
+                                <option value="카테고리">카테고리</option>
+                            </select>
+                            <div class="OOTC-area-title OOTC-input-line">
+                                <span>제목</span><input type="text" name="title" class="OOTC-input" placeholder="제목을 입력해주세요.">
+                            </div>
+                            <div class="OOTC-area-title OOTC-input-line">
+                                <span>봉사장소</span><input type="text"  name="place" class="OOTC-input" placeholder="서울시 강남구 역삼동 남도빌딩">
+                            </div>
+                            <div class="OOTC-area-title OOTC-input-line">
+                                <span>봉사시간</span><input type="text" name="time" class="OOTC-input" placeholder="2021/05/26 09:00 ~ 16:00">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="area2">
+                        <div class="area2-wrap">
+                            <div class="area2-title">
+                                <span>내용</span><textarea name="" id="" cols="59" rows="15" placeholder="내용을 입력하세요."></textarea>
+                            </div>
+                            <div class="area2-title">
+                                <span>특이사항</span><input type="text" class="OOTC-input" placeholder="점심제공 등">
+                            </div>
+                            <div class="area2-file">
+                                <span>첨부파일</span><input type="file" class="fileselect">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="button-wrap">
+                <button class="submitBtn">등록하기</button>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+		<div class="footer-container">
+			<div class="footer-top">
+				<div class="footer-logo"></div>
+				<div class="footer-nav">
+					<div class="footer-nav-wrap">
+						<a href="#">믿을 수 있는 중고거래</a>
+						<a href="#">자주 묻는 질문</a>
+					</div>
+					<div class="footer-nav-wrap">
+						<a href="#" class="blur">회사소개</a>
+						<a href="#">광고주센터</a>
+						<a href="#" class="blur">동네가게</a>
+					</div>
+					<div class="footer-nav-wrap">
+						<a href="#" class="blur">이용약관</a>
+						<a href="#" class="blur">개인정보처리방침</a>
+						<a href="#" class="blur">위치기반서비스 이용약관</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-content">
+				<div class="footer-content-wrap">
+					<div class="footer-content-info">(06234) 서울특별시 강남구 테헤란로 14길 6 남도빌딩 | TEL : 0000 - 0000 | FAX : 02 - 0000 - 0000</div>
+					<div class="footer-content-info">MAIL : focus@service.com</div>
+					<div class="footer-content-info">copyright @FOCUS CORP.ALL LIGHT RESERVED</div>
+				</div>
+			</div>
+			<div class="footer-bottom"></div>
+		</div>
+	</footer>
+</body>
+</html>

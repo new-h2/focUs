@@ -183,7 +183,19 @@ textarea{
 	color: #FBD70D;
 }
 
+/* ---------------------- donation/serve ---------------------- */
 
+.big_img{
+	width: 1100px;
+	height: 300px;
+	background-color: gray;
+}
+.sel_box{
+	height: 30px;
+	width: 100px;
+	border-style: none;
+	background-color: #FFA6FF;
+}
 
 
 
