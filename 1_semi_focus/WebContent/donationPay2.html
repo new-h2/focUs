@@ -1,0 +1,191 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/navigation.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    header{
+        height: 70px;
+    }
+
+    body{
+        width: 1000px;
+        margin: auto;
+    } /* 사이즈가 안맞아 1000으로 수정,*/
+
+    #main10{
+       text-align: center;
+       font-size: 55px;
+       font-weight: bold;
+    }
+
+    .positioning{border: 1px solid black;}
+    .main11{position: relative;}
+        #first {
+            width: 1000px; 
+            height: 300px;
+            margin-left: 1px;
+            margin-top: 50px;
+            border-bottom: none;
+            background: rgba(196, 196, 196, 0.2);
+            }
+        #second {
+            width: 800px; 
+            height: 200px; 
+            position: absolute; 
+            top: 30px; left: 50px;
+            line-height: 40px;
+            font-weight: bold;
+            }  
+    
+    .main12{position: relative;}
+        #third{
+            border: 1px solid black;
+            margin-left: 1px;
+            border-top: none;
+            width: 1000px; 
+            height: 800px;
+        }
+        #fourth{
+            width: 800px; 
+            height: 200px; 
+            position: absolute; 
+            top: 30px; left: 50px;
+            line-height: 40px;
+            font-weight: bold;
+        }
+        #fifth{
+           
+            width: 850px; 
+            height: 400px; 
+            position: absolute; 
+            top: 250px; 
+            left: 50px;
+            line-height: 40px;
+            font-weight: bold;
+            
+        }
+        #sixth{
+            width: 800px; 
+            height: 200px; 
+            position: absolute; 
+            top: 700px; left: 50px;
+            line-height: 40px;
+            font-weight: bold;
+            
+        }
+     .main14{position: relative;}
+        #seven{
+	        width: 850px; 
+            height: 400px; 
+            position: absolute; 
+            top:  900px; 
+            left: 50px;
+            margin-top: -500px;
+            line-height: 40px;
+            font-weight: bold;
+            
+        
+        }
+    #main13{
+        margin-top: 50px;
+        text-align: center;
+    }
+    
+</style>
+
+</head>
+<body>
+   <header>
+      <!-- 왼쪽 상단 로고 -->
+      <div class="cate_logo">
+         <b>focUs</b>
+      </div>
+      
+      <!-- 카테고리 -->
+      <div class="cate_category">
+
+         <a href="#"><button class="cate_item">후원하기</button></a>
+         <a href="serveReserve.html"><button class="cate_item">봉사하기</button></a>
+         <a href="board.html"><button class="cate_item">게시글</button></a>
+         <a href="#"><button class="cate_item">굿즈판매</button></a>
+         
+      </div>
+      
+      <!-- 로그인으로 하이퍼링크 -->
+      <div class="cate_to">
+         <a href="login.html"><button class="cate_toLogin">로그인</button></a>
+         <a href="myPage.html"><button class="cate_toMyPage">마이페이지</button></a>
+      </div>
+   </header>
+   
+    <div id="main10">
+     	후원하기
+    </div>
+
+    <div class="main11">
+        <div class="positioning" id="first"></div>
+            <div class="positioning1" id="second">
+            <p>
+            <span style="color: #FFD73C; font-size: 60px;">*</span> <span style=" font-size: 50px;">후원자 정보(필수)</span><br><br>
+            이름 :<span>김땡땡</span><br>
+            휴대폰 번호 :<span>010-1111-1111</span><br>
+            이메일:<span>dog1004@naver.com</span>
+            </p>
+            </div>
+        </div> 
+    
+    <div class="main12">
+        <div id="third"></div>
+        <div id="fourth">
+            <p>
+            <span style="color: #FFD73C; font-size: 60px;">*</span> <span style=" font-size: 50px;">후원금 </span> <span style="font-size: small;">*결제하실 금액이 맞는 정확하게  확인해주세요!*</span> <br><br>
+            <span style="font-size: 30px;">
+            <label>후원금:</label>
+            <input type="text" style="width:300px; height:50px; margin:0 15px; 
+            border: none; border-radius: 5px; box-shadow: 1px 1px 1px 1px #ccc; 
+            padding-right: 10px; text-align: right; font-size:20px; color:#444; font-weight:600 "
+            id="dprice" placeholder="금액을 입력해주세요">원
+            </span>
+            </p>
+        </div>
+        <div id="fifth">
+           <span style="color: #FFD73C; font-size: 60px;">*</span> <span style=" font-size: 50px;">후원자 정보(필수)</span><br><br>
+			<span style="font-size: 20px;">
+			
+            <input type="checkbox" id="chkbtn0">기부금 영수증 발급을 희망합니다.</span>
+           
+        </div>
+        
+        <div id="main14">
+        <div id="sixth"></div>
+        <div id="seven">
+        <p><br>
+            <span style="color: #FFD73C; font-size: 60px;">*</span> <span style=" font-size: 50px;">이용약관동의 (필수) </span> <span style="font-size: small;">*확인해주세요!*</span> <br><br>
+            <span style="font-size: 20px;">
+           	<input type="checkbox" id="chkbtn_all">(전체)이용약관에 동의합니다.<br></span>
+           	<span>
+           	<input type="checkbox" id="chkbtn1">(필수)이용약관에 동의합니다.<br>
+           	<input type="checkbox" id="chkbtn2">(필수)개인정보수집,이용에 동의합니다.<br>
+           	<input type="checkbox" id="chkbtn3">(필수)개인정보 제3자 제공에  동의합니다.<br>
+           	<input type="checkbox" id="chkbtn4">(필수)고유식별정보 처리에 동의합니다.<br>
+           	<input type="checkbox" id="chkbtn4">(선택)캠페인 및 행사 안내를 위한 정보 수집 및 이용에 동의합니다.<br>
+            </span>
+            </p>
+        </div>
+    </div>
+</div>
+    <div id="main13">
+        <input type="button" value="결제하기" style="background-color: #FFD73C; width: 150px; height: 45px; font-size: large; color: white;">
+    </div>
+    <br><br>
+    <footer>
+        <!-- 비워둠 -->
+    </footer>
+
+</body>
+</html>

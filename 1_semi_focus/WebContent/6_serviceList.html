@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/navigation.css">
+
+<style>
+	.serviceList_King{
+		margin:100px 100px;
+	}
+	
+	.serviceList_main1{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 50px;
+		width: 450px;
+		padding:20px;
+		border: 1px solid #ffd73c;
+	}
+	
+	.serviceList_main1_title{
+		font-size: 30px;
+		font-weight: bold;
+		margin-bottom: 30px;
+	}
+	
+	.serviceList_main1_content{
+		display:flex;
+		flex-direction: row;
+		line-height:40px;
+	}
+	
+	.serviceLsit_main1_cotent_bold{
+		display:flex;
+		flex-direction: column;
+		margin-left:20px;
+		margin-right:80px;
+		font-weight: bold;
+		font-size: 18px;
+	}
+	
+	.serviceLsit_main1_cotent_light{
+		display:flex;
+		flex-direction: column;
+		font-size: 15px;	
+	}
+	
+	.serviceList_main2{
+		display: flex;
+		flex-direction: column;
+		width: 800px;
+	}
+	
+	.serviceList_main2_title{
+		font-size: 20px;
+		font-weight: bold;
+		margin-bottom: 30px;
+	}
+	
+	.serviceList_main2_content{
+		display:flex;
+		flex-direction: column;
+		line-height:40px;
+	}
+	
+	.serviceLsit_main2_cotent_bold{
+		display:flex;
+		flex-direction: row;
+	}
+	
+	.serviceLsit_main2_cotent_light{
+		display:flex;
+		flex-direction: row;
+	}	
+	
+	.serviceLsit_main2_cotent_btn{
+		width: 90px;
+		height: 25px;
+		border-radius: 26px;
+		border: 1px solid grey;
+		background-color : light grey;
+		color: black;
+		font-size: 14px;
+		margin: 15px;
+		align:right;
+	}
+		.serviceLsit_main2_cotent_btn2{
+		width: 90px;
+		height: 25px;
+		border-radius: 26px;
+		border: none;
+		background-color :#ffd73c;
+		color: white;
+		font-size: 14px;
+		margin: 15px
+	}
+	
+	#span1{
+		margin: 10px 50px;
+		font-size:15px;
+		font-weight:bold;
+	}
+	
+	#span2{
+		margin: 10px 60px 10px 50px;
+	}
+	
+	#span3{
+		margin: 10px 20px;
+	}
+	
+	#h1{
+		border: 2px double black;
+	}
+	
+	#h2{
+	
+	}
+</style>
+</head>
+<body>
+	
+	<header>
+      <!-- 왼쪽 상단 로고 -->
+      <div class="cate_logo">
+         <b>focUs</b>
+      </div>
+      
+      <!-- 카테고리 -->
+      <div class="cate_category">
+
+         <a href="#"><button class="cate_item">후원하기</button></a>
+         <a href="serveReserve.html"><button class="cate_item">봉사하기</button></a>
+         <a href="board.html"><button class="cate_item">게시글</button></a>
+         <a href="#"><button class="cate_item">굿즈판매</button></a>
+         
+      </div>
+      
+      <!-- 로그인으로 하이퍼링크 -->
+      <div class="cate_to">
+         <a href="login.html"><button class="cate_toLogin">로그인</button></a>
+         <a href="myPage.html"><button class="cate_toMyPage">마이페이지</button></a>
+      </div>
+   </header>
+   		
+   		<div class="serviceList_King">
+   		
+   			<div class="serviceList_main1">
+   				<div class="serviceList_main1_title">
+   					<span>나의 봉사</span>
+   				</div>
+   				<div class="serviceList_main1_content">
+   					<div class="serviceLsit_main1_cotent_bold">
+   						<span>제목</span>
+   						<span>봉사장소</span>
+   						<span>봉사시간</span>
+   					</div>
+   					<div class="serviceLsit_main1_cotent_light">
+   						<span>[청소] 2시간 부탁드려요</span>
+   						<span>서울시 강남구 역삼동</span>
+   						<span>2021/06/03 09:00~13:00</span>
+   					</div>
+   				</div>
+   			</div>
+   			<div class="serviceList_main2">
+   				<div class="serviceList_main2_title">
+   					<span>봉사 대기자 명단 확인</span>
+   				</div>
+   				<div class="serviceList_main2_content"> <!-- 가로로 -->
+   					<div class="serviceLsit_main2_cotent_bold">
+   						<span id="span1">순번</span>
+   						<span id="span1">이름</span>
+   						<span id="span1">연락처</span>
+   						<span id="span1">이메일</span>
+   						<span id="span1">예약현황</span>
+   					</div>
+   					<hr id='h1'>
+   					<div class="serviceLsit_main2_cotent_light">
+   						<span id="span2">1</span>
+   						<span id="span2">곽희진</span>
+   						<span id="span3">010-1111-2222</span>
+   						<span id="span3">Gwak@gamil.com</span>
+ 						<button class="serviceLsit_main2_cotent_btn2">예약확정</button>  					
+   					</div>
+   					<hr id='h2'>
+   					<div class="serviceLsit_main2_cotent_light">
+   						<span id="span2">2</span>
+   						<span id="span2">박준수</span>
+   						<span id="span3">010-2222-3333</span>
+   						<span id="span3">Park@gamil.com</span>
+ 						<button class="serviceLsit_main2_cotent_btn">예약대기</button>  					
+   					</div>
+   					<hr id='h2'>
+   					<div class="serviceLsit_main2_cotent_light">
+   						<span id="span2">3</span>
+   						<span id="span2">윤모불</span>
+   						<span id="span3">010-3333-4444</span>
+   						<span id="span3">Yoon@gamil.com</span>
+ 						<button class="serviceLsit_main2_cotent_btn2">예약확정</button>  					
+   					</div>
+   					<hr id='h2'>
+   					<div class="serviceLsit_main2_cotent_light">
+   						<span id="span2">4</span>
+   						<span id="span2">이근하</span>
+   						<span id="span3">010-4444-5555</span>
+   						<span id="span3">Lee@gamil.com</span>
+ 						<button class="serviceLsit_main2_cotent_btn">예약대기</button>  					
+   					</div>
+   					<hr id='h2'>
+   					<div class="serviceLsit_main2_cotent_light">
+   						<span id="span2">5</span>
+   						<span id="span2">장원형</span>
+   						<span id="span3">010-5555-6666</span>
+   						<span id="span3">Jang@gamil.com</span>
+ 						<button class="serviceLsit_main2_cotent_btn">예약대기</button>  					
+   					</div>
+   				</div>
+   			</div>
+   		</div>
+   
+   
+   
+    <footer>
+		<div class="footer-container">
+			<div class="footer-top">
+				<div class="footer-logo"></div>
+				<div class="footer-nav">
+					<div class="footer-nav-wrap">
+						<a href="#">믿을 수 있는 중고거래</a>
+						<a href="#">자주 묻는 질문</a>
+					</div>
+					<div class="footer-nav-wrap">
+						<a href="#" class="blur">회사소개</a>
+						<a href="#">광고주센터</a>
+						<a href="#" class="blur">동네가게</a>
+					</div>
+					<div class="footer-nav-wrap">
+						<a href="#" class="blur">이용약관</a>
+						<a href="#" class="blur">개인정보처리방침</a>
+						<a href="#" class="blur">위치기반서비스 이용약관</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-content">
+				<div class="footer-content-wrap">
+					<div class="footer-content-info">(06234) 서울특별시 강남구 테헤란로 14길 6 남도빌딩 | TEL : 0000 - 0000 | FAX : 02 - 0000 - 0000</div>
+					<div class="footer-content-info">MAIL : focus@service.com</div>
+					<div class="footer-content-info">copyright @FOCUS CORP.ALL LIGHT RESERVED</div>
+				</div>
+			</div>
+			<div class="footer-bottom"></div>
+		</div>
+	</footer>
+</body>
+</html>

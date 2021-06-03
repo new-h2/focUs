@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+html{
+	height:100%;
+}
+body{
+		background: #ffffff;
+		padding: ;
+		align-items: center;
+		font-size:13px;
+	}
+	
+	.join_container{
+		display: flex;
+			margin: 0 auto;
+			margin-top: 50px;
+			padding: 30px;
+			width: 350px;
+			height: 650px;	
+			flex-direction: column;
+			align-items: center;
+			border: 3px solid #ffd73c;
+			justyfy-content: center;
+	}
+
+	.logo_header{
+			width: 125px;
+			display: flex;
+			justyfy-content: center;
+	}
+		
+	.logo_letter{
+			font-size: 50px;
+			color:  #ffd73c;
+	}
+	
+	.join_box{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.join_input, .join_password_input, .join_name, .join_phone, .join_email, .join_address{
+		width: 268px;
+		height: 25px;
+		background-color: #fafafa;
+		border-radius: 3px;
+		border:1px solid lightgrey;
+	}
+		
+	.join_btn{
+		width: 268px;
+		height: 38px;
+		border-radius: 26px;
+		border: none;
+		margin: 5px 5px 35px;
+		background-color :#ffd73c;
+		color: white;
+		font-size: 14px;
+	}
+	
+
+</style>
+</head>
+<body>
+	<!-- 전체페이지 -->
+	<div class="join_king">
+		<!-- 화면가입 박스 -->
+		<div class="join_main">
+			<!-- 로고와 컨텐트 버튼 분리 -->
+			<div class="join_logo"></div>
+			<div class="join box">
+				<div class="join_title">
+					<span>아이디</span>
+					<span>비밀번호</span>
+					<span>비밀번호확인</span>
+					<span>이름</span>
+					<span>닉네임</span>
+					<span>성별</span>
+					<span>연락처</span>
+					<span>주소</span>
+				</div>
+				<div class="join_cotent">
+					<div><input type="text" name="U_NO"></div>
+					<div><input type="password" name="U_PW"></div>
+					<div><input type="password" name="U_PW2"></div>
+					<div><input type="text" name="U_NAME"></div>
+					<div><input type="text" name="U_NICK"></div>
+					<div><input type="" name="U_GENDER"></div>
+					<div><input type="tel" name="U_PHONE"></div>
+					<div><input type="text" name="U_ADDRESS"></div>
+				</div>
+			</div>
+			<div class="join_btn"></div>
+		</div>
+	</div>	
+	
+</body>
+</html>
